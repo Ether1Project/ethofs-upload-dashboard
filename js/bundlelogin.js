@@ -53,14 +53,14 @@
                     if (!error) {
                       if (result) {
                         console.log("User Account Found: " + web3.eth.defaultAccount);
-                        var formText = '<h3 class="content__subtitle">Welcome Back ' + result + '</h3><center><h3>User Address: ' + GlobalUserAddress + '</h3></center><center><a href="uploads.html" class="rainbow-button">Enter</a><h4>User Address Found - Click Enter To Proceed</h4></center>';
+                        var formText = '<div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' + result + '</div>';
                         document.getElementById("ethoFSLogin").innerHTML = formText;
                       }
                     } else {
                       console.log("Error getting user account name");
                       var formText = '<form id="subscribe-form"><div class="form-group group-inline"></div><p class="m-b-0 fade-color-3"><small>Please Install or Login to Metamask/The Ether-1 Browser Extension to Continue</small></p></form>';
                       document.getElementById("ethoFSLogin").innerHTML = formText;
-                    } 
+                    }
                   });
 
                 } else {
