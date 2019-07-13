@@ -53,8 +53,8 @@
                     if (!error) {
                       if (result) {
                         console.log("User Account Found: " + web3.eth.defaultAccount);
-                        var formText = '<div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 18px">' + result + '</div>';
-                        document.getElementById("ethoFSLogin").innerHTML = formText;
+                        var formText = '<div class="email">' + GlobalUserAddress + '</div>';
+                        document.getElementById("ethoFSaddr").innerHTML = formText;
                       }
                     } else {
                       console.log("Error getting user account name");
