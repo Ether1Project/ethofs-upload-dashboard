@@ -6,7 +6,7 @@ a {
 .rainbow-button {
   width: calc(6vw + 3px);
   height: calc(3vw + 3px);
-  background-image: linear-gradient(90deg, #308968 25%, #840032 50%, #308968 75%, #840032 100%);
+  background-image: linear-gradient(90deg, #840032 25%, #840032 50%, #840032 75%, #308968 100%);
   border-radius: 5px;
   display: flex;
   align-items: center;
