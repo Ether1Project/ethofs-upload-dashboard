@@ -638,7 +638,7 @@
               Ether-1's goal is to bring all this together by providing a streamlined, completely decentralized development and content hosting platform that is usable by anyone.
             </div>
             <center>
-              <button type="button" class="btn bg-indigo waves-effect">
+              <button type="button" class="btn bg-indigo waves-effect" data-toggle="modal" data-target="#defaultModal">
                 <i class="material-icons">cloud_upload</i>
                 <span>Upload to ethoFS now</span>
             </center>
@@ -649,6 +649,108 @@
         </div>
       </div>
       <!-- #END# CPU Usage -->
+
+      <!-- Default Size Modal -->
+      <div class="modal fade" id="defaultModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" style="background-color: black;">
+            <div class="modal-header">
+              <h4 class="modal-title" id="defaultModalLabel" style="color:white;">
+                <center><img src="dashboard/images/ethofslogo.png"></img>
+                  <br>
+                  <br> Live Upload | ethoFS Browser Node</center>
+              </h4>
+            </div>
+            <div class="modal-body">
+              <center>
+                <h4>ETHOFS BROWSER NODE INFORMATION</h4>
+              </center>
+
+              <div>
+                <h5>Ether-1 Address:</h5>
+                <pre class="etho-message" style="color:white; background-color: Black;"></pre>
+              </div>
+
+              <div>
+                <h5>ethoFS Node ID:</h5>
+                <pre class="node-id" style="color:white; background-color: Black;"></pre>
+              </div>
+
+              <div>
+                <h4>Status:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h4>
+                <div>
+                  <pre id="logs" class="success">Initializing node...</pre>
+                </div>
+                <h4>Peer Health:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h4>
+
+                <div id="peer-count-div">
+                  <pre id="peercount"><div id="myPeerBar"></div></pre>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+              <button type="button" class="btn btn-link waves-effect" data-toggle="modal" data-dismiss="modal" data-target="#defaultModal2">NEXT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="defaultModal2" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" style="background-color: black;">
+            <div class="modal-header">
+              <h4 class="modal-title" id="defaultModalLabel" style="color:white;">
+                <i class="material-icons">cloud_upload</i> Live Upload | ethoFS Browser Node
+              </h4>
+            </div>
+            <div class="modal-body">
+
+                <div id="files" class="box disabled" ondragover="event.preventDefault()">
+                  <h1 align="center">Files</h1>
+
+                  <div id="drag-container">
+                    <i class="material-icons">cloud_upload</i>
+                    <p><b>Click here</b> to select a directory to upload.</p>
+                    <input type="file" id="fileUploadButton" webkitdirectory mozdirectory msdirectory odirectory directory multiple>
+
+                  </div>
+
+                  <div id="progress-container">
+                    <div id="progress-bar"></div>
+                  </div>
+
+                  <table id="file-history">
+                    <thead>
+                      <tr>
+                        <th>Upload Path</th>
+                        <th>File Name</th>
+                        <th>File Size</th>
+                      </tr>
+                    </thead>
+                    <tbody id="file-history-div">
+                    <tbody id="file-history-body">
+                      <tr class="empty-row">
+                        <td colspan="4">There are no files awaiting upload</td>
+                      </tr>
+                    </tbody>
+                </div>
+                </table>
+
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+              <button type="button" class="btn btn-link waves-effect" data-toggle="modal" data-target="#defaultModal2">NEXT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END MODAL -->
+
 
 
       <div class="row clearfix">
