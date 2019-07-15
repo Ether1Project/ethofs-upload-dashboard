@@ -1834,7 +1834,7 @@
   margin-bottom: 15px; }
   .block-header h2 {
     margin: 0 !important;
-    color: #666 !important;
+    color: #fff !important;
     font-weight: normal;
     font-size: 16px; }
     .block-header h2 small {
@@ -7519,7 +7519,8 @@ fieldset[disabled] .form-control {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   font-family: "Roboto", sans-serif;
-  background: #fdfdfd;
+  background: #000;
+  color: white;
   width: 300px;
   overflow: hidden;
   display: inline-block;
@@ -7612,7 +7613,7 @@ fieldset[disabled] .form-control {
       .sidebar .menu .list li.active > :first-child span {
         font-weight: bold; }
       .sidebar .menu .list .header {
-        background: #eee;
+        background: #840032;
         font-size: 12px;
         font-weight: 600;
         padding: 8px 16px; }
@@ -7659,7 +7660,7 @@ fieldset[disabled] .form-control {
         -webkit-transform: scale(1);
         transform: scale(1); }
       .sidebar .menu .list a {
-        color: #747474;
+        color: #fff;
         position: relative;
         display: inline-flex;
         vertical-align: middle;
@@ -7673,7 +7674,7 @@ fieldset[disabled] .form-control {
           right: 15px; }
         .sidebar .menu .list a span {
           margin: 7px 0 7px 12px;
-          color: #333;
+          color: #fff;
           font-weight: bold;
           font-size: 14px;
           overflow: hidden; }
