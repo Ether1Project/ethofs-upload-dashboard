@@ -1,17 +1,20 @@
 {
-  "name": "adminbsb-materialdesign",
-  "version": "1.0.7",
-  "description": "AdminBSB - Free admin panel that is based on Bootstrap 3.x with Material Design",
-  "main": "js/admin.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gurayyarar/AdminBSBMaterialDesign.git"
+  "name": "exchange-files-browser",
+  "version": "0.0.0",
+  "scripts": {
+    "bundle": "browserify public/app.js > public/bundle.js",
+    "bundleupload": "browserify public/upload.js > public/bundleupload.js",
+    "bundlelogin": "browserify public/assets/js/login.js > public/assets/js/bundlelogin.js",
+    "start": "http-server -c-1 -p 12345 public",
+    "dev": "npm run bundle && npm run start"
   },
-  "author": "Güray Yarar",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gurayyarar/AdminBSBMaterialDesign/issues"
+  "devDependencies": {
+    "browserify": "^16.2.0",
+    "http-server": "^0.11.1"
   },
-  "homepage": "https://github.com/gurayyarar/AdminBSBMaterialDesign#readme"
+  "dependencies": {
+    "ipfs-http-client": "^28.0.0",
+    "stream-buffers": "^3.0.1"
+  }
 }
