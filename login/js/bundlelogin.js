@@ -60,7 +60,7 @@
                       console.log("Error getting user account name");
                       var formText = '<form id="subscribe-form"><div class="form-group group-inline"></div><p class="m-b-0 fade-color-3"><small>Please Install or Login to Metamask/The Ether-1 Browser Extension to Continue</small></p></form>';
                       document.getElementById("ethoFSLogin").innerHTML = formText;
-                    } 
+                    }
                   });
 
                 } else {
@@ -148,8 +148,8 @@
     function getBalance(web3) {
       console.log("Starting Balance Detection..");
       web3.eth.getBalance(web3.eth.defaultAccount, function(err, data) {
-        var balance = "ETHO Balance: " + web3.fromWei(data, "ether").toFixed(2);
-        document.getElementById("ethobalance").textContent = balance;
+        var balance = "Balance: " + web3.fromWei(data, "ether").toFixed(2);
+        document.getElementById(".ethobalance").textContent = balance;
         console.log("ETHO Balance: " + data);
       });
     }
