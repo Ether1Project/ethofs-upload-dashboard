@@ -1,4 +1,25 @@
-﻿/* Navbar ====================================== */
+﻿#drag-container {
+  height: 10em;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed;
+  border-radius: 2px;
+  opacity: 0.7;
+  overflow: hidden;
+  position: relative;
+}
+
+#drag-container.dragging {
+  background-color: #E7E8EE;
+  opacity: 1
+}
+#drag-container p {
+  margin-left: 1em;
+}
+
+/* Navbar ====================================== */
 @import url(materialize.css);
 .navbar {
   font-family: "Roboto", sans-serif;
