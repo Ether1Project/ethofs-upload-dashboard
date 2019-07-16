@@ -5913,14 +5913,14 @@ fieldset[disabled] .form-control {
     opacity: 0.8; }
 
 .list-group .pl-red {
-  stroke: #F44336; }
+  stroke: #840032; }
 
 .list-group .list-group-bg-red {
-  background-color: #F44336;
+  background-color: #840032;
   border: none;
   color: #fff; }
   .list-group .list-group-bg-red:hover, .list-group .list-group-bg-red:focus {
-    background-color: #F44336;
+    background-color: #840032;
     color: #fff;
     opacity: 0.8; }
 
@@ -6698,7 +6698,7 @@ fieldset[disabled] .form-control {
   -o-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
   .spinner-layer.pl-red {
-    border-color: #F44336; }
+    border-color: #840032; }
   .spinner-layer.pl-pink {
     border-color: #E91E63; }
   .spinner-layer.pl-purple {
