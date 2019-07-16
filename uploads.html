@@ -32,6 +32,19 @@
 
   <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
   <link href="dashboard/css/themes/all-themes.css" rel="stylesheet" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132755795-7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-132755795-7');
+  </script>
 </head>
 
 <body class="theme-red">
@@ -99,7 +112,7 @@
             </a>
             <ul class="ml-menu">
               <li>
-                  <a href="https://etholabs.org">ethoLABS</a>
+                <a href="https://etholabs.org">ethoLABS</a>
               </li>
             </ul>
           </li>
@@ -312,7 +325,9 @@
 
                 <div id="drag-container">
                   <br>
-                  <center><p><b>Click here</b> to select a directory to upload.</p></center>
+                  <center>
+                    <p><b>Click here</b> to select a directory to upload.</p>
+                  </center>
                   <input type="file" id="fileUploadButton" webkitdirectory mozdirectory msdirectory odirectory directory multiple>
                 </div>
 
@@ -375,17 +390,27 @@
                 <td data-th="Upload Size"><span id="upload-size">0</span> MB</td>
                 <td data-th="Contract Duration (Blocks)">
                   <center><select id="contract-duration" onchange="contractDurationChange(this);"></center>
-                    <option value="0" selected="selected">0</option>
-                    <option value="100000">100000<p> - 15 Days</p></option>
-                    <option value="200000">200000<p> - 30 Days</p></option>
-                    <option value="300000">300000<p> - 45 Days</p></option>
-                    <option value="400000">400000<p> - 60 Days</p></option>
-                    <option value="500000">500000<p> - 75 Days</p></option>
-                    <option value="600000">600000<p> - 90 Days</p></option>
-                    <option value="700000">700000<p> - 105 Days</p></option>
-                    <option value="800000">800000<p> - 120 Days</p></option>
-                    <option value="900000">900000<p> - 135 Days</p></option>
-                    <option value="1000000">1000000<p> - 150 Days</p></option>
+                  <option value="0" selected="selected">0</option>
+                  <option value="100000">100000<p> - 15 Days</p>
+                  </option>
+                  <option value="200000">200000<p> - 30 Days</p>
+                  </option>
+                  <option value="300000">300000<p> - 45 Days</p>
+                  </option>
+                  <option value="400000">400000<p> - 60 Days</p>
+                  </option>
+                  <option value="500000">500000<p> - 75 Days</p>
+                  </option>
+                  <option value="600000">600000<p> - 90 Days</p>
+                  </option>
+                  <option value="700000">700000<p> - 105 Days</p>
+                  </option>
+                  <option value="800000">800000<p> - 120 Days</p>
+                  </option>
+                  <option value="900000">900000<p> - 135 Days</p>
+                  </option>
+                  <option value="1000000">1000000<p> - 150 Days</p>
+                  </option>
                   </select>
                 </td>
               </tr>
@@ -393,7 +418,9 @@
                 <th>Total Contract Cost</th>
               </tr>
               <tr style="border-color:#0000;">
-                <center><td data-th="Total Contract Cost"><span id="contract-cost">0</span> ETHO</td></center>
+                <center>
+                  <td data-th="Total Contract Cost"><span id="contract-cost">0</span> ETHO</td>
+                </center>
               </tr>
             </table>
 
@@ -498,7 +525,9 @@
 
                 <div>
                   <h3 style="padding-left:20px;">Message Log:</h3>
-                  <center><pre class="mining-message" id="mining-message" style="color: #3CB371; font-family:Orbitron; font-weight:regular !important;"></pre></center>
+                  <center>
+                    <pre class="mining-message" id="mining-message" style="color: #3CB371; font-family:Orbitron; font-weight:regular !important;"></pre>
+                  </center>
                 </div>
                 <div class="summary" style="text-align: center !important; padding: 10px; width:100%; background: #000000;">
                   <h3 style="font-size: 20px;">Current Ether-1 Block Height: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="block-height" style="font-family: Orbitron; color: #3CB371; font-size: 20px; font-weight: regular;">0</span></h3>
@@ -567,7 +596,9 @@
           <div class="modal-body">
             <main>
               <div class="box node" style="width:100%; background: #000000;">
-                <center><h3>ETHOFS HOSTING CONTRACT DETAILS</h3></center>
+                <center>
+                  <h3>ETHOFS HOSTING CONTRACT DETAILS</h3>
+                </center>
 
               </div>
               <div class="summary" style="background: #000000; background-color: #000">
@@ -622,16 +653,26 @@
                   <tr>
                     <td data-th="Contract Duration (Blocks)"><select class="js-select22" name="extend-contract" id="extend-contract" onchange="contractExtensionChange(this);">
                         <option value="0" selected="selected">0</option>
-                        <option value="100000">100000<p> - 15 Days</p></option>
-                        <option value="200000">200000<p> - 30 Days</p></option>
-                        <option value="300000">300000<p> - 45 Days</p></option>
-                        <option value="400000">400000<p> - 60 Days</p></option>
-                        <option value="500000">500000<p> - 75 Days</p></option>
-                        <option value="600000">600000<p> - 90 Days</p></option>
-                        <option value="700000">700000<p> - 105 Days</p></option>
-                        <option value="800000">800000<p> - 120 Days</p></option>
-                        <option value="900000">900000<p> - 135 Days</p></option>
-                        <option value="1000000">1000000<p> - 150 Days</p></option>
+                        <option value="100000">100000<p> - 15 Days</p>
+                        </option>
+                        <option value="200000">200000<p> - 30 Days</p>
+                        </option>
+                        <option value="300000">300000<p> - 45 Days</p>
+                        </option>
+                        <option value="400000">400000<p> - 60 Days</p>
+                        </option>
+                        <option value="500000">500000<p> - 75 Days</p>
+                        </option>
+                        <option value="600000">600000<p> - 90 Days</p>
+                        </option>
+                        <option value="700000">700000<p> - 105 Days</p>
+                        </option>
+                        <option value="800000">800000<p> - 120 Days</p>
+                        </option>
+                        <option value="900000">900000<p> - 135 Days</p>
+                        </option>
+                        <option value="1000000">1000000<p> - 150 Days</p>
+                        </option>
                       </select>
                     </td>
                     <td data-th="Cost"><span id="contract-extension-cost">0</span> ETHO</td>
