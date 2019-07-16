@@ -555,51 +555,51 @@
     <!-- begin contract detail modal -->
     <div class="modal fade" id="contractDetailModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content" style="background-color:#080808; border-top-left-radius: 0px; border-top-right-radius: 0px; border-style: outset; border-width: 5px; border-color:#ffffff">
-          <div class="modal-header" style="background-image: linear-gradient(#303030, #080808); border-top-left-radius: 0px; border-top-right-radius: 0px; ">
-            <h5 class="modal-title" id="staticModalLabel" style="font-weight:bold; color: white;">ethoFS Hosting Contract Detail</h5>
-            <a class="navbar-brand" href="https://ether1.org"><img src="https://uploads.ethofs.com/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo"></a>
+        <div class="modal-content" style="background-color:#000; border-top-left-radius: 0px; border-top-right-radius: 0px; border-style: outset; border-width: 5px; border-color:#000">
+          <div class="modal-header" style="background-color: #000; border-top-left-radius: 0px; border-top-right-radius: 0px; ">
+            <h5 class="modal-title" id="staticModalLabel" style="font-weight:bold; color: white;">ethoFS Hosting Contract Details</h5>
+            <center><img src="dashboard/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo"></center>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;" onclick="resetContractDetailTableRows();">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <main>
-              <div class="box node" style="width:100%; background: #000000; background-image: linear-gradient(#7a1336, black);">
-                <h1>ETHOFS HOSTING CONTRACT DETAILS</h1>
+              <div class="box node" style="width:100%; background: #000000;">
+                <center><h3>ETHOFS HOSTING CONTRACT DETAILS</h3></center>
 
               </div>
-              <div class="summary" style="background: #000000; background-image: linear-gradient(#7a1336, black);">
+              <div class="summary" style="background: #000000; background-color: #000">
                 <div id="earth"></div>
                 <table class="rwd-table" id="contract-detail-table" name="contract-detail-table">
-                  <tr style="border-color:#151515;">
+                  <tr style="border-color:#000;">
                     <th>Contract Name</th>
                   </tr>
-                  <tr style="border-color:#151515;">
+                  <tr style="border-color:#000;">
                     <td data-th="Contract Name"><span id="contract-detail-name" name="contract-detail-name"></span></td>
                   </tr>
-                  <tr style="border-color:#151515;">
+                  <tr style="border-color:#000;">
                     <th>Contract Deployment Block Height</th>
                   </tr>
-                  <tr style="border-color:#151515;">
+                  <tr style="border-color:#000;">
                     <td data-th="Contract Deployment Block Height"><span id="contract-detail-startblock" name="contract-detail-startblock"></span></td>
                   </tr>
-                  <tr style="border-color:#151515;">
+                  <tr style="border-color:#000;">
                     <th>Contract Expiration Block Height</th>
                   </tr>
-                  <tr style="border-color:#151515;">
+                  <tr style="border-color:#000;">
                     <td data-th="Contract Expiration Block Height"><span id="contract-detail-endblock" name="contract-detail-endblock"></span></td>
                   </tr>
-                  <tr style="border-color:#151515;">
+                  <tr style="border-color:#000;">
                     <th>Contract Status</th>
                   </tr>
-                  <tr style="border-color:#151515;">
+                  <tr style="border-color:#000;">
                     <td data-th="Contract Status"><span id="contract-detail-status" name="contract-detail-status"></span></td>
                   </tr>
-                  <tr style="border-color:#151515;">
+                  <tr style="border-color:#000;">
                     <th>Total Contract Size</th>
                   </tr>
-                  <tr style="border-color:#151515;">
+                  <tr style="border-color:#000;">
                     <td data-th="Total Contract Size"><span id="contract-detail-size" name="contract-detail-size"></span></td>
                   </tr>
                   <tr>
@@ -639,8 +639,8 @@
 
 
                 <div class="table-data__tool-right">
-                  <button class="au-btn au-btn-icon au-btn--green au-btn--small" id="contract-extension-button" type="button" onclick="contractExtensionConfirmation();">
-                    <i class="zmdi zmdi-plus"></i>Extend Hosting Contract</button>
+                  <button class="btn btn-primary" id="contract-extension-button" type="button" onclick="contractExtensionConfirmation();">
+                    </i>Extend Hosting Contract</button>
                 </div>
 
               </div>
@@ -649,7 +649,7 @@
           </main>
           </p>
         </div>
-        <div class="modal-footer" style="background-image: linear-gradient(#080808, #303030); border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#ffffff">
+        <div class="modal-footer" style="background-color: #000; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#000">
           <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="resetContractDetailTableRows();">Close</button>
         </div>
       </div>
