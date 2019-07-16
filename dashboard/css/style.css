@@ -1,3 +1,262 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:300,400,700";
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px;
+}
+.rwd-table tr {
+  border-top: 1px solid #000;
+  border-bottom: 2px solid #000;
+}
+.rwd-table th {
+  display:none;
+  font-weight:bold;
+  color: #fff;
+}
+.rwd-table td {
+  display: block;
+  color: #3CB371;
+  font-size:16px !important;
+}
+.rwd-table td:nth-child(1) {
+  width: 25%;
+}
+.rwd-table td:nth-child(2) {
+  width: 25%;
+}
+.rwd-table td:nth-child(3) {
+  width: 45%;
+}
+.rwd-table td:first-child {
+  padding-top: .5em;
+}
+.rwd-table td:last-child {
+  padding-bottom: .5em;
+}
+.rwd-table:before {
+  content: attr(data-th) "";
+  font-weight: bold;
+  width: 6.5eml
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  .rwd-table td:before {
+    display: none;
+  }
+}
+.rwd-table th, .rwd-table td {
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child, .rwd-table rd:first-child {
+    padding-left: 0;
+  }
+}
+.rwd-table{
+  background: #000;
+  border-radius: 0px;
+  border-width: 2px;
+  border-color: #000;
+  overflow: hidden;
+  width: 100%;
+}
+.rwd-table th, .rwd-table td {
+  margin: .5em 1em;
+}
+@media (min-width:480px) {
+  .rwd-table th, .rwd-table td {
+    padding: 1em !important;
+  }
+}
+.rwd-table th:before {
+}
+
+#file-history-div{
+  overflow: auto;
+  width:100%;
+}
+#file-history-body{
+  table-layout: fixed;
+}
+#files {
+  width:100%;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  background-color: black;
+  padding: 10px;
+  height: 500px;
+  border-style: ridge;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 0px;
+}
+
+#file-status {
+  font-style: italic;
+  color: #840032;
+  font-size: 0.8em;
+  margin: 1em 0;
+}
+#files table tr{
+  width: 100%;
+}
+
+#files table th:nth-child(1),
+#files table td:nth-child(1) {
+  width: 35%;
+}
+
+#files table th:nth-child(2),
+#files table td:nth-child(2) {
+  width: 50%;
+}
+
+#files table th:nth-child(3),
+#files table td:nth-child(3) {
+  width: 15%;
+}
+
+#files .empty-row td {
+  text-align: center;
+}
+#fileUploadButton {
+  width: 400%;
+  height: 400%;
+  opacity: 0;
+  position: absolute;
+}
+#drag-container {
+  height: 10em;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed;
+  border-radius: 2px;
+  opacity: 0.7;
+  overflow: hidden;
+  position: relative;
+}
+
+#drag-container.dragging {
+  background-color: #00000;
+  opacity: 1
+}
+#drag-container p {
+  margin-left: 1em;
+}
+
+#progress-container {
+  margin-top: 1em;
+  border-radius: 0.5em;
+  overflow-x: hidden;
+}
+
+#progress-bar {
+  height: 1em;
+  border-radius: 0.5em;
+  background-color: #840032;
+  transform: translateX(-100%);
+}
+
+#progressbar {
+    margin-top: 20px;
+    background-color: #FFFFFF;
+  }
+
+  .progress-label {
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+    background-color: #FFFFFF;
+  }
+
+  .ui-dialog-titlebar-close {
+    display: none;
+  }
+
+#peer-count-div{
+  width: 100%;
+  padding:0;
+}
+#peercount{
+  height: 44px;
+  padding: 6px;
+}
+#myPeerProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+#myPeerBar {
+  border-radius: 10px;
+  width: 0%;
+  height: 30px;
+  background-color: #3CB371;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  transition: width 1s ease-in-out;
+  transition-timing-function: linear;
+  -webkit-transition: 1s ease-in-out;
+  -webkit-transition-timing-function: linear;
+}
+@keyframes peerprogresscolor{
+  10% {
+    background-color: #0f0;
+    width: 20%
+  }
+  40% {
+    background-color: #ff0;
+    width: 40%
+  }
+  70% {
+    background-color: #f00;
+    width: 60%
+  }
+  100% {
+    background-color: #fff;
+    width: 100%
+  }
+}
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  border-radius: 10px;
+  width: 0%;
+  height: 30px;
+  background-color: #3CB371;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  transition: width 1s ease-in-out;
+  transition-timing-function: linear;
+  -webkit-transition: 1s ease-in-out;
+  -webkit-transition-timing-function: linear;
+}
+#myAnalyzeProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myAnalyzeBar {
+  border-radius: 10px;
+  width: 0%;
+  height: 30px;
+  background-color: #3CB371;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  transition: width 1s ease-in-out;
+  transition-timing-function: linear;
+  -webkit-transition: 1s ease-in-out;
+  -webkit-transition-timing-function: linear;
+}
+
 ﻿#drag-container {
   height: 10em;
   margin-top: 1em;
@@ -2475,18 +2734,18 @@ section.content {
 
 .btn-link {
   font-weight: bold;
-  color: #333;
+  color: #fff;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s; }
   .btn-link:active, .btn-link:focus {
     text-decoration: none;
-    color: #333; }
+    color: #fff; }
   .btn-link:hover {
     text-decoration: none;
-    color: #333;
-    background-color: #ddd; }
+    color: #fff;
+    background-color: #840032; }
 
 .btn-circle-lg {
   border: none;

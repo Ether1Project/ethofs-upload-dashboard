@@ -246,7 +246,7 @@ function appendFile (name, hash, size, data) {
   const link = document.createElement('a')
   link.setAttribute('href', url)
   link.setAttribute('download', name)
-  link.innerHTML = '<img width=20 class="table-action" src="assets/download.svg" alt="Download" />'
+  link.innerHTML = '<img width=20 class="table-action" src="dashboard/images/download.svg" alt="Download" />'
   downloadCell.appendChild(link)
 
   row.appendChild(nameCell)
@@ -363,7 +363,7 @@ window.startUploadProcess = function(){
       function searchMessageString(){
       var randomTimeout = Math.floor(Math.random() * ((10000) - 2000)) + 2000;
           setTimeout(function(){
-            // unsubscribeToMessaging(); 
+            // unsubscribeToMessaging();
              //console.log(messageString);
               document.getElementById("upload-status-message").textContent="In Progress";
               $uploadMessage.innerText = "Upload In Progress\n";

@@ -352,7 +352,7 @@
       this.liObj = {};
       this.multiple = this.$element.prop('multiple');
       this.autofocus = this.$element.prop('autofocus');
-      this.$newElement = this.createView();
+      //this.$newElement = this.createView();
       this.$element
         .after(this.$newElement)
         .appendTo(this.$newElement);
@@ -405,7 +405,7 @@
           that.$button
             .addClass('bs-invalid')
             .focus();
-          
+
           that.$element.on({
             'focus.bs.select': function () {
               that.$button.focus();
@@ -422,7 +422,7 @@
               that.$element.off('rendered.bs.select');
             }
           });
-          
+
         });
       }
 
@@ -431,7 +431,7 @@
       });
     },
 
-    createDropdown: function () {
+    /*createDropdown: function () {
       // Options
       // If we are multiple or showTick option is set, then add the show-tick class
       var showTick = (this.multiple || this.options.showTick) ? ' show-tick' : '',
@@ -512,7 +512,7 @@
           _li = [],
           optID = 0,
           titleOption = document.createElement('option'),
-          liIndex = -1; // increment liIndex whenever a new <li> element is created to ensure liObj is correct
+          liIndex = -1; // increment liIndex whenever a new <li> element is created to ensure liObj is correct*/
 
       // Helper functions
       /**
@@ -1059,12 +1059,12 @@
     },
 
     tabIndex: function () {
-      if (this.$element.data('tabindex') !== this.$element.attr('tabindex') && 
+      if (this.$element.data('tabindex') !== this.$element.attr('tabindex') &&
         (this.$element.attr('tabindex') !== -98 && this.$element.attr('tabindex') !== '-98')) {
         this.$element.data('tabindex', this.$element.attr('tabindex'));
         this.$button.attr('tabindex', this.$element.data('tabindex'));
       }
-      
+
       this.$element.attr('tabindex', -98);
     },
 
@@ -1390,7 +1390,7 @@
 
     toggle: function (e) {
       e = e || window.event;
-      
+
       if (e) e.stopPropagation();
 
       this.$button.trigger('click');

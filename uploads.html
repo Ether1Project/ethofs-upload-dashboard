@@ -560,19 +560,17 @@
           <div class="modal-content" style="background-color: black;">
             <div class="modal-header">
               <h4 class="modal-title" id="defaultModalLabel" style="color:white;">
-                <i class="material-icons">cloud_upload</i> Live Upload | ethoFS Browser Node
-              </h4>
+                Live Upload | ethoFS Browser Node</h4>
             </div>
             <div class="modal-body">
 
               <div id="files" class="box disabled" ondragover="event.preventDefault()">
-                <h1 align="center">Files</h1>
+                <h4 align="center">Upload Your Files</h4>
 
                 <div id="drag-container">
-                  <i class="material-icons">cloud_upload</i>
-                  <p><b>Click here</b> to select a directory to upload.</p>
+                  <br>
+                  <center><p><b>Click here</b> to select a directory to upload.</p></center>
                   <input type="file" id="fileUploadButton" webkitdirectory mozdirectory msdirectory odirectory directory multiple>
-
                 </div>
 
                 <div id="progress-container">
@@ -612,17 +610,17 @@
         <div class="modal-content" style="background-color: black;">
           <div class="modal-header">
             <h4 class="modal-title" id="defaultModalLabel" style="color:white;">
-              <i class="material-icons">cloud_upload</i> Live Upload | ethoFS Browser Node
+              Live Upload | ethoFS Browser Node
             </h4>
           </div>
           <div class="modal-body">
 
             <table class="rwd-table">
-              <tr style="border-color:#151515;">
+              <tr style="border-color:#000;">
                 <th>Contract Name</th>
               </tr>
-              <tr style="border-color:#151515;">
-                <td data-th="Contract Name"><input type="text" id="newcontractname" name="newcontractname" placeholder="Enter Contract Name"></input></td>
+              <tr style="border-color:#000;">
+                <td data-th="Contract Name"><input type="text" id="newcontractname" name="newcontractname" placeholder="Enter Contract Name" style="color:Black;"></input></td>
               </tr>
               <tr>
                 <th>ethoFS Upload Status</th>
@@ -632,7 +630,8 @@
               <tr>
                 <td data-th="ethoFS Upload Hash"><span id="upload-hash"></span></td>
                 <td data-th="Upload Size"><span id="upload-size">0</span> MB</td>
-                <td data-th="Contract Duration (Blocks)"><select id="contract-duration" onchange="contractDurationChange(this);">
+                <td data-th="Contract Duration (Blocks)">
+                  <center><select id="contract-duration" onchange="contractDurationChange(this);"></center>
                     <option selected>100000</option>
                     <option>200000</option>
                     <option>300000</option>
@@ -646,20 +645,20 @@
                   </select>
                 </td>
               </tr>
-              <tr style="border-color:#151515;">
+              <tr style="border-color:#000;">
                 <th>Total Contract Cost</th>
               </tr>
-              <tr style="border-color:#151515;">
-                <td data-th="Total Contract Cost"><span id="contract-cost">0</span> ETHO</td>
+              <tr style="border-color:#000;">
+                <center><td data-th="Total Contract Cost"><span id="contract-cost">0</span> ETHO</td></center>
               </tr>
             </table>
 
           </div>
 
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer" style="background-color: black;">
           <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" id="upload-confirm-button" onclick="window.startUploadProcess();">CLOSE</button>
-          <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" id="upload-confirm-button" onclick="window.startUploadProcess();">Confirm</button>
+          <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" id="upload-confirm-button" onclick="window.startUploadProcess();">CONFIRM</button>
         </div>
       </div>
     </div>
@@ -667,10 +666,9 @@
 
     <div class="modal fade" id="uploadTrackerModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content" style="background-color:#080808; border-top-left-radius: 0px; border-top-right-radius: 0px; border-style: outset; border-width: 5px; border-color:#ffffff">
-          <div class="modal-header" style="background-image: linear-gradient(#303030, #080808); border-top-left-radius: 0px; border-top-right-radius: 0px; ">
-            <h5 class="modal-title" id="staticModalLabel" style="font-weight:bold; color:#ffffff;">Live Upload | ethoFS Upload Tracker</h5>
-            <a class="navbar-brand" href="https://ether1.org"><img src="https://uploads.ethofs.com/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo"></a>
+        <div class="modal-content" style="background-color: black; border-top-left-radius: 0px; border-top-right-radius: 0px; border-style: outset; border-width: 5px; border-color:#000">
+          <div class="modal-header" style="background-color: black; border-top-left-radius: 0px; border-top-right-radius: 0px; ">
+            <img src="dashboard/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#ffffff;" onclick="updateContractTable();">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -678,25 +676,21 @@
           <div class="modal-body">
             <main>
 
-
-              <div class="box node" style="width:100%; background: #000000; background-image: linear-gradient(#7a1336, black);">
-                <h1 style="padding: 20px;">ETHOFS UPLOAD STATUS: <span id="upload-status-message" class="pulsate" style="color: #3CB371; font-size: 20px; font-weight: regular;">IN PROGRESS</span></h1>
-
+              <div class="box node" style="width:100%; background: #000000;">
+                <h3 style="padding: 20px;">ethoFS Upload Status: <span id="upload-status-message" style="color: #3CB371">In Progress</span></h3>
                 <div>
-                  <h1 style="padding-left:10px;">Message Log:</h1>
+                  <h3 style="padding-left:10px;">Message Log:</h3>
                   <pre class="upload-message" style="color: #3CB371; font-family:Orbitron; font-weight:regular; font-size: 15px;"></pre>
                 </div>
                 <div class="summary" style="text-align: center !important; padding: 10px; width:100%; background: #000000;">
                   <div id="myBar">0%</div>
-                  <!--<h1 style="font-size: 17px;">ethoFS Upload Confirmations Received: &nbsp&nbsp&nbsp<span id="node-upload-count">0</span></h1> -->
                 </div>
-
               </div>
 
 
             </main>
           </div>
-          <div class="modal-footer" style="background-image: linear-gradient(#080808, #303030); border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#ffffff">
+          <div class="modal-footer" style="background-image: linear-gradient(#080808, #303030); border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#000">
             <button type="button" class="btn btn-primary" id="upload-check-button" onclick="finishUploadModal(); event.stopPropagation();">Close</button>
           </div>
         </div>
@@ -705,10 +699,9 @@
 
     <div class="modal fade" id="analyzeDataModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content" style="background-color:#080808; border-top-left-radius: 0px; border-top-right-radius: 0px; border-style: outset; border-width: 5px; border-color:#ffffff">
+        <div class="modal-content" style="background-color:#080808; border-top-left-radius: 0px; border-top-right-radius: 0px; border-style: outset; border-width: 5px; border-color:#000">
           <div class="modal-header" style="background-image: linear-gradient(#303030, #080808); border-top-left-radius: 0px; border-top-right-radius: 0px; ">
-            <h5 class="modal-title" id="staticModalLabel" style="font-weight:bold; color:#ffffff;">Analyzing Upload Data | ethoFS Upload Tracker</h5>
-            <a class="navbar-brand" href="https://ether1.org"><img src="https://uploads.ethofs.com/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo"></a>
+            <img src="dashboard/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo">
             <button type="button" class="close" data-dismiss="modal" id="analyze-close-button" aria-label="Close" style="color:#ffffff;">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -716,12 +709,10 @@
           <div class="modal-body">
             <main>
 
-
               <div class="box node" style="width:100%; background: #000000; background-image: linear-gradient(#7a1336, black);">
-                <h1 style="padding: 20px;">DATA UPLOAD STATUS: <span id="analyze-status-message" class="pulsate" style="color: #3CB371; font-size: 20px; font-weight: regular;">ANALYZING UPLOAD DATA</span></h1>
-
+                <h4 style="padding: 20px;">Data Upload Status: <span id="analyze-status-message" style="color: #3CB371; font-size: 20px; font-weight: regular;">Analyzing Upload Data</span></h4>
                 <div>
-                  <h1 style="padding-left:10px;">Message Log:</h1>
+                  <h4 style="padding-left:10px;">Message Log:</h4>
                   <pre class="analyze-message" style="color: #3CB371; font-family:Orbitron; font-weight:regular; font-size: 15px;"></pre>
                 </div>
                 <div class="summary" style="text-align: center !important; padding: 10px; width:100%; background: #000000;">
