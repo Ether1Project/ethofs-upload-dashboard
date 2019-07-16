@@ -733,13 +733,15 @@
       </div>
     </div>
     <!-- end analyze data modal -->
+
     <!-- begin mined block checking modal -->
     <div class="modal fade" id="minedBlockTrackerModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content" style="background-color:#080808; border-top-left-radius: 0px; border-top-right-radius: 0px; border-style: outset; border-width: 5px; border-color:#ffffff">
-          <div class="modal-header" style="background-image: linear-gradient(#303030, #080808); border-top-left-radius: 0px; border-top-right-radius: 0px; ">
+        <div class="modal-content" style="background-color:#000; border-top-left-radius: 0px; border-top-right-radius: 0px; border-style: outset; border-width: 5px; border-color:#000">
+          <div class="modal-header" style="background-color: #000; border-top-left-radius: 0px; border-top-right-radius: 0px; ">
             <h5 class="modal-title" id="staticModalLabel" style="font-weight:bold; color:#ffffff;">Waiting For Confirmation | ethoFS Block Tracker</h5>
-            <a class="navbar-brand" href="https://ether1.org"><img src="https://uploads.ethofs.com/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo"></a>
+            <br>
+            <center><img src="dashboard/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo"></center>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#ffffff;">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -747,15 +749,15 @@
           <div class="modal-body">
             <main>
 
-              <div class="box node" style="width:100%; background: #000000; background-image: linear-gradient(#7a1336, black);">
-                <h1 style="padding: 20px;">ETHER-1 TRANSACTION STATUS: <span id="mining-status-message" class="pulsate" style="color: #3CB371; font-size: 20px; font-weight: regular;">IN PROGRESS</span></h1>
+              <div class="box node" style="width:100%; background: #000000; background-color: #000;">
+                <h3 style="padding: 20px;">Ether-1 Transaction Status: <span id="mining-status-message" style="color: #3CB371; font-size: 20px; font-weight: regular;">In Progress</span></h3>
 
                 <div>
-                  <h1 style="padding-left:10px;">Message Log:</h1>
-                  <pre class="mining-message" id="mining-message" style="color: #3CB371; font-family:Orbitron; font-weight:regular !important;"></pre>
+                  <h3 style="padding-left:20px;">Message Log:</h3>
+                  <center><pre class="mining-message" id="mining-message" style="color: #3CB371; font-family:Orbitron; font-weight:regular !important;"></pre></center>
                 </div>
                 <div class="summary" style="text-align: center !important; padding: 10px; width:100%; background: #000000;">
-                  <h1 style="font-size: 17px;">Current Ether-1 Block Height: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="block-height" style="font-family: Orbitron; color: #3CB371; font-size: 20px; font-weight: regular;">0</span></h1>
+                  <h3 style="font-size: 20px;">Current Ether-1 Block Height: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="block-height" style="font-family: Orbitron; color: #3CB371; font-size: 20px; font-weight: regular;">0</span></h3>
                 </div>
 
               </div>
@@ -764,19 +766,21 @@
             </main>
             </p>
           </div>
-          <div class="modal-footer" style="background-image: linear-gradient(#080808, #303030); border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#ffffff">
+          <div class="modal-footer" style="background-color: #000; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#0000">
           </div>
         </div>
       </div>
     </div>
     <!-- end mined block checking modal -->
+
     <!-- begin preparing upload modal -->
     <div class="modal fade" id="preparingUploadModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content" style="background-color:#080808; border-top-left-radius: 0px; border-top-right-radius: 0px; border-style: outset; border-width: 5px; border-color:#ffffff">
-          <div class="modal-header" style="background-image: linear-gradient(#303030, #080808); border-top-left-radius: 0px; border-top-right-radius: 0px; ">
+          <div class="modal-header" style="background-image: linear-gradient(#000, #000); border-top-left-radius: 0px; border-top-right-radius: 0px; ">
             <h5 class="modal-title" id="staticModalLabel" style="font-weight:bold; color:#ffffff;">Preparing Data Upload | ethoFS Block Tracker</h5>
-            <a class="navbar-brand" href="https://ether1.org"><img src="https://uploads.ethofs.com/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo"></a>
+            <br>
+            <center><img src="dashboard/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo"></center>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#ffffff;">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -785,10 +789,10 @@
             <main>
 
               <div class="box node" style="width:100%; background: #000000; background-image: linear-gradient(#7a1336, black);">
-                <h1 style="padding: 20px;">ETHOFS UPLOAD STATUS: <span id="preparing-status-message" class="pulsate" style="color: #3CB371; font-size: 20px; font-weight: regular;">PREPARING UPLOAD</span></h1>
+                <h3 style="padding: 20px;">ETHOFS UPLOAD STATUS: <span id="preparing-status-message" class="pulsate" style="color: #3CB371; font-size: 20px; font-weight: regular;">PREPARING UPLOAD</span></h3>
 
                 <div>
-                  <h1 style="padding-left:10px;">Message Log:</h1>
+                  <h3 style="padding-left:10px;">Message Log:</h3>
                   <pre class="mining-message" id="preparing-message" style="color: #3CB371; font-family:Orbitron; font-weight:regular !important;">Preparing Data For Upload</pre>
                 </div>
 
@@ -798,12 +802,13 @@
             </main>
             </p>
           </div>
-          <div class="modal-footer" style="background-image: linear-gradient(#080808, #303030); border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#ffffff">
+          <div class="modal-footer" style="background-color: #000; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#000">
           </div>
         </div>
       </div>
     </div>
     <!-- end preparing upload modal -->
+
     <!-- begin contract detail modal -->
     <div class="modal fade" id="contractDetailModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-lg" role="document">
