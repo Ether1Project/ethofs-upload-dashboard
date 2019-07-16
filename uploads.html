@@ -375,16 +375,17 @@
                 <td data-th="Upload Size"><span id="upload-size">0</span> MB</td>
                 <td data-th="Contract Duration (Blocks)">
                   <center><select id="contract-duration" onchange="contractDurationChange(this);"></center>
-                    <option selected>100000</option>
-                    <option>200000</option>
-                    <option>300000</option>
-                    <option>400000</option>
-                    <option>500000</option>
-                    <option>600000</option>
-                    <option>700000</option>
-                    <option>800000</option>
-                    <option>900000</option>
-                    <option>1000000</option>
+                    <option value="0" selected="selected">0</option>
+                    <option value="100000">100000<p> - 15 Days</p></option>
+                    <option value="200000">200000<p> - 30 Days</p></option>
+                    <option value="300000">300000<p> - 45 Days</p></option>
+                    <option value="400000">400000<p> - 60 Days</p></option>
+                    <option value="500000">500000<p> - 75 Days</p></option>
+                    <option value="600000">600000<p> - 90 Days</p></option>
+                    <option value="700000">700000<p> - 105 Days</p></option>
+                    <option value="800000">800000<p> - 120 Days</p></option>
+                    <option value="900000">900000<p> - 135 Days</p></option>
+                    <option value="1000000">1000000<p> - 150 Days</p></option>
                   </select>
                 </td>
               </tr>
@@ -400,7 +401,7 @@
 
         </div>
         <div class="modal-footer" style="background-color: black;">
-          <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" id="upload-confirm-button" onclick="window.startUploadProcess();">CLOSE</button>
+          <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
           <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" id="upload-confirm-button" onclick="window.startUploadProcess();">CONFIRM</button>
         </div>
       </div>
@@ -621,16 +622,16 @@
                   <tr>
                     <td data-th="Contract Duration (Blocks)"><select class="js-select22" name="extend-contract" id="extend-contract" onchange="contractExtensionChange(this);">
                         <option value="0" selected="selected">0</option>
-                        <option value="100000">100000</option>
-                        <option value="200000">200000</option>
-                        <option value="300000">300000</option>
-                        <option value="400000">400000</option>
-                        <option value="500000">500000</option>
-                        <option value="600000">600000</option>
-                        <option value="700000">700000</option>
-                        <option value="800000">800000</option>
-                        <option value="900000">900000</option>
-                        <option value="1000000">1000000</option>
+                        <option value="100000">100000<p> - 15 Days</p></option>
+                        <option value="200000">200000<p> - 30 Days</p></option>
+                        <option value="300000">300000<p> - 45 Days</p></option>
+                        <option value="400000">400000<p> - 60 Days</p></option>
+                        <option value="500000">500000<p> - 75 Days</p></option>
+                        <option value="600000">600000<p> - 90 Days</p></option>
+                        <option value="700000">700000<p> - 105 Days</p></option>
+                        <option value="800000">800000<p> - 120 Days</p></option>
+                        <option value="900000">900000<p> - 135 Days</p></option>
+                        <option value="1000000">1000000<p> - 150 Days</p></option>
                       </select>
                     </td>
                     <td data-th="Cost"><span id="contract-extension-cost">0</span> ETHO</td>
