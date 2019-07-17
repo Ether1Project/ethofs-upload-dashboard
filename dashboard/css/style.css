@@ -4571,7 +4571,7 @@ section.content {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.31) !important;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.31) !important;
   border: none; }
   .modal .modal-content .modal-body {
     color: #fff;
