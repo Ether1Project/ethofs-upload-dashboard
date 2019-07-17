@@ -85,13 +85,13 @@
   width:100%;
   overflow-y:scroll;
   overflow-x:hidden;
-  background-color: black;
+  background-color: #840032;
   padding: 10px;
   height: 500px;
   border-style: ridge;
   border-width: 5px;
-  border-color: black;
-  border-radius: 0px;
+  border-color: white;
+  border-radius: 50px;
 }
 
 #file-status {
@@ -190,7 +190,7 @@
   background-color: #ddd;
 }
 #myPeerBar {
-  border-radius: 10px;
+  border-radius: 20px;
   width: 0%;
   height: 30px;
   background-color: #3CB371;
