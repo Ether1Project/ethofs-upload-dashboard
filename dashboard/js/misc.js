@@ -8,7 +8,7 @@ const $miningMessage = document.querySelector('.mining-message')
 /*START OF MISC GLOBAL VARIABLES*/
 var GlobalUploadName = "";
 var GlobalUserAddress = "";
-var GlobalHostingCost = 1.0;
+var GlobalHostingCost = 0.1;
 var GlobalHostingCostWei = GlobalHostingCost * 1000000000000000000;
 var GlobalUploadSize = 0;
 var GlobalHashArray = new Array();
