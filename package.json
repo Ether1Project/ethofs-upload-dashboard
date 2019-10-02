@@ -1,20 +1,20 @@
 {
-  "name": "exchange-files-browser",
-  "version": "0.0.0",
+  "name": "ethofs-upload-dashboard",
+  "version": "1.0.4",
   "scripts": {
-    "bundle": "browserify public/app.js > public/bundle.js",
-    "bundleupload": "browserify public/upload.js > public/bundleupload.js",
-    "bundlelogin": "browserify public/assets/js/login.js > public/assets/js/bundlelogin.js",
-    "start": "http-server -c-1 -p 12345 public",
-    "dev": "npm run bundle && npm run start"
+    "bundle": "browserify dashboard/js/app.js > dashboard/js/bundle.js",
+    "bundlelogin": "browserify login/js/login.js > login/js/bundlelogin.js"
   },
   "license": "MIT",
-  "devDependencies": {
-    "browserify": "^16.2.0",
-    "http-server": "^0.11.1"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "ipfs-http-client": "^28.0.0",
-    "stream-buffers": "^3.0.1"
+    "browserify": "^16.5.0",
+    "ethereum-private-key-to-address": "0.0.2",
+    "ethereumjs-common": "^1.3.2",
+    "ipfs": "^0.38.0",
+    "libp2p-pnet": "^0.1.0",
+    "node-fetch": "^2.6.0",
+    "pull-file-reader": "^1.0.2",
+    "web3": "^1.2.1"
   }
 }
