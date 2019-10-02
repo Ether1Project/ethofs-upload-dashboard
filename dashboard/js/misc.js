@@ -56,15 +56,13 @@ function ethofsLogin(privateKey) {
         privateKeyLogin = true;
         web3.eth.net.isListening()
             .then(function() {
-                console.log('is connected')
+                console.log('ethoFS is connected')
                 let account = web3.eth.accounts.privateKeyToAccount('0x' + privateKey);
                 console.log(account);
                 web3.eth.accounts.wallet.add(account)
                 web3.eth.defaultAccount = account.address;
-                console.log("Default Account: " + web3.eth.defaultAccount);
                 startEthofs()
             })
-        console.log("Private Key:" + privateKey);
     } else {
         privateKeyLogin = false;
         window.web3 = new Web3(window.web3.currentProvider);
@@ -135,10 +133,8 @@ function AddNewUser(userName) {
             data: controller.methods.AddNewUserPublic(userName).encodeABI()
         };
         var privateKey = '0x' + GlobalPrivateKey;
-        console.log("Private Key: " + privateKey);
         web3.eth.accounts.signTransaction(tx, privateKey)
             .then(function(signedTransactionData) {
-                console.log("Signed TX Data: " + signedTransactionData.rawTransaction);
                 web3.eth.sendSignedTransaction(signedTransactionData.rawTransaction, function(error, result) {
                     if (!error) {
                         if (result) {
