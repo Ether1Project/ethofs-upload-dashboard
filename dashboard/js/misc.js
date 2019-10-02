@@ -8,6 +8,7 @@ const $miningMessage = document.querySelector('.mining-message')
 /*START OF MISC GLOBAL VARIABLES*/
 var privateKeyLogin = false;
 var GlobalPrivateKey;
+var minimumContractCost = 10000000000000000;
 
 var GlobalUploadName = "";
 var GlobalUserAddress = "";
@@ -198,6 +199,9 @@ function getBalance(web3) {
 //CALCULATE AMOUNT TO BE SENT
 function calculateCost(contractSize, contractDuration, hostingCost) {
     var cost = ((((contractSize / 1048576) * hostingCost) * (contractDuration / 46522)));
+    if (cost < minimumContractCost) {
+        cost = minimumContractCost;
+    }
     return cost;
 }
 /*************************************************************************************************************/
