@@ -320,7 +320,7 @@ window.startUploadProcess = function() {
 
     const streamFilesExternally = (filesArray, MainHashArray) => {
 
-        var confirmationServers = ["https://ipfsapi.ethofs.com/ipfs/", "https://ipfsapi1.ethofs.com/ipfs/", "https://ipfsapi2.ethofs.com/ipfs/", "https://ipfsapi6.ethofs.com/ipfs/"];
+        var confirmationServers = ["https://ipfsapi.ethofs.com/ipfs/", "https://ipfsapi1.ethofs.com/ipfs/", "https://ipfsapi2.ethofs.com/ipfs/", "https://ipfsapi5.ethofs.com/ipfs/", "https://ipfsapi6.ethofs.com/ipfs/", "https://ipfsapi7.ethofs.com/ipfs/"];
         let hashVerificationArray = [...GlobalHashArray, ...GlobalMainHashArray];
         hashVerificationArray.push(GlobalMainContentHash);
         var hashConfirmationCount = 0;
