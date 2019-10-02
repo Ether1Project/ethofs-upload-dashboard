@@ -162,7 +162,7 @@
   <section class="content">
     <div class="container-fluid">
       <div class="block-header">
-        <h2>DASHBOARD - <span id="accountaddress"> </span> - <span id="welcome-name"> </span> <span id="ethobalance"></span></h2>
+        <h2>DASHBOARD - <span id="accountaddress" style="word-break: break-word;"> </span> - <span id="welcome-name"> </span> <span id="ethobalance"></span></h2>
       </div>
 
       <!-- Widgets -->
@@ -213,9 +213,10 @@
         </div>
       </div>
       <!-- #END# Widgets -->
+
       <!-- CPU Usage -->
       <div class="row clearfix">
-        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-6">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <div class="card">
             <div class="header">
               <div class="row clearfix">
@@ -234,7 +235,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
           <div class="card">
             <div class="header bg-indigo">
               <h2>
@@ -272,12 +273,12 @@
                 Login | ethoFS Upload Dashboard
               </h4>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="width:100%; background: #000000; background-color: #000;">
 
               <p>ethoFS Account Address Not Found - Please Install/Login To a Browser Extension or Login With Private Key Below</p>
               <table class="rwd-table">
                 <tr style="border-color:#000;">
-                  <th>Private Key</th>
+                  <th>Private Key:</th>
                 </tr>
                 <tr style="border-color:#000;">
                   <td data-th="Private Key"><input type="text" id="privatekey" name="privatekey" placeholder="Enter Private Key" style="color:Black;"></input></td>
@@ -302,7 +303,7 @@
                 Registration | ethoFS Upload Dashboard
               </h4>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="width:100%; background: #000000; background-color: #000;">
 
               <p>ethoFS Account Registration</p>
               <table class="rwd-table">
@@ -337,6 +338,7 @@
             <div class="modal-body">
               <center>
                 <h4>ETHOFS BROWSER NODE INFORMATION</h4>
+                <br>
               </center>
 
               <div>
@@ -378,12 +380,12 @@
               <h4 class="modal-title" id="defaultModalLabel" style="color:white;">
                 Live Upload | ethoFS Browser Node</h4>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="width:100%; background: #000000; background-color: #000;">
 
               <div id="files" class="box" ondragover="event.preventDefault()">
                 <h4 align="center">Upload Your Files</h4>
 
-                <div id="drag-container">
+                <div id="drag-container" style="width:100%; background: #000000; background-color: #000;">
                   <br>
                   <center>
                     <p><b>Click here to upload a directory</b> or drag an individual file into this box to upload.</p>
@@ -433,7 +435,7 @@
           </div>
           <div class="modal-body" style="width:100%; background: #000000;">
             <main>
-              <table class="rwd-table" name="contract-detail-table">
+              <table class="rwd-table" name="contract-detail-table" style="width:100%; background: #000000;">
                 <tr style="border-color:#000;">
                   <th>Contract Name</th>
                 </tr>
@@ -500,15 +502,17 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#ffffff;" onclick="updateContractTable();">
                 <span aria-hidden="true">&times;</span>
               </button>
+              <br>
+              <center><img src="dashboard/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo"></center>
           </div>
           <div class="modal-body">
             <main>
 
               <div class="box node" style="width:100%; background: #000000;">
-                <h3 style="padding: 20px;">ethoFS Upload Status: <span id="upload-status-message" style="color: #3CB371">In Progress</span></h3>
+                <h3 style="padding: 10px;">ethoFS Upload Status: <span id="upload-status-message" style="color: #3CB371; text-align: center !important;">In Progress</span></h3>
                 <div>
                   <h3 style="padding-left:10px;">Message Log:</h3>
-                  <pre class="upload-message" style="color: #3CB371; font-family:Orbitron; font-weight:regular; font-size: 15px;"></pre>
+                  <span class="upload-message" style="color: #3CB371; font-size: 24px; padding: 10px"></span>
                 </div>
                 <div class="summary" style="text-align: center !important; padding: 10px; width:100%; background: #000000;">
                   <div id="myBar">0%</div>
@@ -518,7 +522,7 @@
 
             </main>
           </div>
-          <div class="modal-footer" style="background-image: linear-gradient(#080808, #303030); border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#000">
+          <div class="modal-footer" style="background-color: #840032; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#000">
             <button type="button" class="btn btn-primary" id="upload-check-button" onclick="finishUploadModal(); event.stopPropagation();">Close</button>
           </div>
         </div>
@@ -533,19 +537,20 @@
               <button type="button" class="close" data-dismiss="modal" id="analyze-close-button" aria-label="Close" style="color:#ffffff;">
                 <span aria-hidden="true">&times;</span>
               </button>
+              <br>
+              <center><img src="dashboard/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo"></center>
           </div>
           <div class="modal-body">
             <main>
 
-              <div class="box node" style="width:100%; background: #000000; background-image: linear-gradient(#7a1336, black);">
-                <h4 style="padding: 20px;">Data Upload Status: <span id="analyze-status-message" style="color: #3CB371; font-size: 20px; font-weight: regular;">Analyzing Upload Data</span></h4>
+              <div class="box node" style="width:100%; background: #000000;">
+                <h4 style="padding: 20px;">Data Upload Status: <span id="analyze-status-message" style="color: #3CB371; font-size: 24px;">Analyzing Upload Data</span></h4>
                 <div>
                   <h4 style="padding-left:10px;">Message Log:</h4>
-                  <pre class="analyze-message" style="color: #3CB371; font-family:Orbitron; font-weight:regular; font-size: 15px;"></pre>
+                  <pre class="analyze-message" style="color: #3CB371; font-size: 24px;"></pre>
                 </div>
                 <div class="summary" style="text-align: center !important; padding: 10px; width:100%; background: #000000;">
                   <div id="myAnalyzeBar">0%</div>
-                  <!--<h1 style="font-size: 17px;">ethoFS Upload Confirmations Received: &nbsp&nbsp&nbsp<span id="node-upload-count">0</span></h1> -->
                 </div>
 
               </div>
@@ -554,7 +559,7 @@
             </main>
             </p>
           </div>
-          <div class="modal-footer" style="background-image: linear-gradient(#080808, #303030); border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#ffffff">
+          <div class="modal-footer" style="background-color: #840032; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#000">
             <button type="button" class="btn btn-primary" id="upload-check-button" onclick="finishUploadModal(); event.stopPropagation();">Close</button>
           </div>
         </div>
@@ -578,29 +583,26 @@
             <main>
 
               <div class="box node" style="width:100%; background: #000000; background-color: #000;">
-                <h3 style="padding: 20px;">Ether-1 Transaction Status: <span id="mining-status-message" style="color: #3CB371; font-size: 20px; font-weight: regular;">In Progress</span></h3>
+                <h3 style="padding: 20px;">Ether-1 Transaction Status: <span id="mining-status-message" style="color: #3CB371; font-size: 24px; text-align: center !important;">In Progress</span></h3>
 
                 <div>
                   <h3 style="padding-left:20px;">Message Log:</h3>
                   <center>
-                    <pre class="mining-message" id="mining-message" style="color: #3CB371; font-family:Orbitron; font-weight:regular !important;"></pre>
+                    <span class="mining-message" id="mining-message" style="color: #3CB371; font-size: 24px;"></span>
                   </center>
                 </div>
-                <div class="summary" style="text-align: center !important; padding: 10px; width:100%; background: #000000;">
-                  <h3 style="font-size: 20px;">Current Ether-1 Block Height: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="block-height" style="font-family: Orbitron; color: #3CB371; font-size: 20px; font-weight: regular;">0</span></h3>
+                <div class="summary" style="text-align: center !important; padding: 20px; width:100%; background: #000000;">
+                  <h3 style="font-size: 24px;">Current Ether-1 Block Height: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="block-height" style="color: #3CB371; font-size: 24px;">0</span></h3>
                 </div>
 
               </div>
 
 
             </main>
-            </p>
           </div>
-          <div class="modal-footer" style="background-color: #000; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#0000">
           </div>
         </div>
       </div>
-    </div>
     <!-- end mined block checking modal -->
 
     <!-- begin preparing upload modal -->
@@ -618,12 +620,12 @@
           <div class="modal-body">
             <main>
 
-              <div class="box node" style="width:100%; background: #000000; background-image: linear-gradient(#7a1336, black);">
-                <h3 style="padding: 20px;">ETHOFS UPLOAD STATUS: <span id="preparing-status-message" class="pulsate" style="color: #3CB371; font-size: 20px; font-weight: regular;">PREPARING UPLOAD</span></h3>
+              <div class="box node" style="width:100%; background: #000000;">
+                <h3 style="padding: 20px;">ETHOFS UPLOAD STATUS: <span id="preparing-status-message" style="color: #3CB371; font-size: 24px;">PREPARING UPLOAD</span></h3>
 
                 <div>
-                  <h3 style="padding-left:10px;">Message Log:</h3>
-                  <pre class="mining-message" id="preparing-message" style="color: #3CB371; font-family:Orbitron; font-weight:regular !important;">Preparing Data For Upload</pre>
+                  <h3 style="padding-left:20px;">Message Log:</h3>
+                  <span class="mining-message" id="preparing-message" style="color: #3CB371;">Preparing Data For Upload</span>
                 </div>
 
               </div>
@@ -631,8 +633,6 @@
 
             </main>
             </p>
-          </div>
-          <div class="modal-footer" style="background-color: #000; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#000">
           </div>
         </div>
       </div>
@@ -701,7 +701,6 @@
 
 
                 <table class="rwd-table" id="contract-detail-extension-table" name="contract-detail-table">
-
                   <tr>
                     <th>Contract Extension Duration (Blocks)</th>
                     <th>Cost</th>
