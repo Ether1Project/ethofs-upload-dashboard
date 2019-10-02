@@ -264,64 +264,64 @@
       <!-- #END# CPU Usage -->
 
       <!-- Login Modal -->
-    <div class="modal fade" id="ethofsLoginModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content" style="background-color: #840032;">
-          <div class="modal-header">
-            <h4 class="modal-title" id="defaultModalLabel" style="color:white;">
-              Login | ethoFS Upload Dashboard
-            </h4>
-          </div>
-          <div class="modal-body">
+      <div class="modal fade" id="ethofsLoginModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" style="background-color: #840032;">
+            <div class="modal-header">
+              <h4 class="modal-title" id="defaultModalLabel" style="color:white;">
+                Login | ethoFS Upload Dashboard
+              </h4>
+            </div>
+            <div class="modal-body">
 
-            <p>ethoFS Account Address Not Found - Please Install/Login To a Browser Extension or Login With Private Key Below</p>
-            <table class="rwd-table">
-              <tr style="border-color:#000;">
-                <th>Private Key</th>
-              </tr>
-              <tr style="border-color:#000;">
-                <td data-th="Private Key"><input type="text" id="privatekey" name="privatekey" placeholder="Enter Private Key" style="color:Black;"></input></td>
-              </tr>
-            </table>
+              <p>ethoFS Account Address Not Found - Please Install/Login To a Browser Extension or Login With Private Key Below</p>
+              <table class="rwd-table">
+                <tr style="border-color:#000;">
+                  <th>Private Key</th>
+                </tr>
+                <tr style="border-color:#000;">
+                  <td data-th="Private Key"><input type="text" id="privatekey" name="privatekey" placeholder="Enter Private Key" style="color:Black;"></input></td>
+                </tr>
+              </table>
 
-          </div>
-
-        </div>
-        <div class="modal-footer" style="background-color: #840032;">
-          <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" id="ethofs-login-button" onclick="window.ethofsLogin(document.getElementById('privatekey').value);">LOGIN</button>
-        </div>
-      </div>
-    </div>
-
-  <!-- Registration Modal -->
-    <div class="modal fade" id="ethofsRegistrationModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content" style="background-color: #840032;">
-          <div class="modal-header">
-            <h4 class="modal-title" id="defaultModalLabel" style="color:white;">
-              Registration | ethoFS Upload Dashboard
-            </h4>
-          </div>
-          <div class="modal-body">
-
-            <p>ethoFS Account Registration</p>
-            <table class="rwd-table">
-              <tr style="border-color:#000;">
-                <th>ethoFS User Name Registration</th>
-              </tr>
-              <tr style="border-color:#000;">
-                <td data-th="User Name"><input type="text" id="username" name="username" placeholder="Enter User Name" style="color:Black;"></input></td>
-              </tr>
-            </table>
+            </div>
 
           </div>
-
-        </div>
-        <div class="modal-footer" style="background-color: #840032;">
-          <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" id="ethofs-registration-button" onclick="window.AddNewUser(document.getElementById('username').value);">REGISTER</button>
+          <div class="modal-footer" style="background-color: #840032;">
+            <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" id="ethofs-login-button" onclick="window.ethofsLogin(document.getElementById('privatekey').value);">LOGIN</button>
+          </div>
         </div>
       </div>
-    </div>
+
+      <!-- Registration Modal -->
+      <div class="modal fade" id="ethofsRegistrationModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" style="background-color: #840032;">
+            <div class="modal-header">
+              <h4 class="modal-title" id="defaultModalLabel" style="color:white;">
+                Registration | ethoFS Upload Dashboard
+              </h4>
+            </div>
+            <div class="modal-body">
+
+              <p>ethoFS Account Registration</p>
+              <table class="rwd-table">
+                <tr style="border-color:#000;">
+                  <th>ethoFS User Name Registration</th>
+                </tr>
+                <tr style="border-color:#000;">
+                  <td data-th="User Name"><input type="text" id="username" name="username" placeholder="Enter User Name" style="color:Black;"></input></td>
+                </tr>
+              </table>
+
+            </div>
+
+          </div>
+          <div class="modal-footer" style="background-color: #840032;">
+            <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" id="ethofs-registration-button" onclick="window.AddNewUser(document.getElementById('username').value);">REGISTER</button>
+          </div>
+        </div>
+      </div>
 
       <!-- Default Size Modal -->
       <div class="modal fade" id="defaultModal" tabindex="-1" role="dialog">
@@ -494,13 +494,13 @@
     </div>
 
     <div class="modal fade" id="uploadTrackerModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content" style="background-color: black; border-top-left-radius: 0px; border-top-right-radius: 0px; border-style: outset; border-width: 5px; border-color:#000">
-          <div class="modal-header" style="background-color: black; border-top-left-radius: 0px; border-top-right-radius: 0px; ">
-            <img src="dashboard/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#ffffff;" onclick="updateContractTable();">
-              <span aria-hidden="true">&times;</span>
-            </button>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background-color: #840032;">
+          <div class="modal-header">
+            <h4 class="modal-title" id="defaultModalLabel" style="color:white;">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#ffffff;" onclick="updateContractTable();">
+                <span aria-hidden="true">&times;</span>
+              </button>
           </div>
           <div class="modal-body">
             <main>
@@ -527,13 +527,13 @@
     </div>
 
     <div class="modal fade" id="analyzeDataModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content" style="background-color:#080808; border-top-left-radius: 0px; border-top-right-radius: 0px; border-style: outset; border-width: 5px; border-color:#000">
-          <div class="modal-header" style="background-image: linear-gradient(#303030, #080808); border-top-left-radius: 0px; border-top-right-radius: 0px; ">
-            <img src="dashboard/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo">
-            <button type="button" class="close" data-dismiss="modal" id="analyze-close-button" aria-label="Close" style="color:#ffffff;">
-              <span aria-hidden="true">&times;</span>
-            </button>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background-color: #840032;">
+          <div class="modal-header">
+            <h4 class="modal-title" id="defaultModalLabel" style="color:white;">
+              <button type="button" class="close" data-dismiss="modal" id="analyze-close-button" aria-label="Close" style="color:#ffffff;">
+                <span aria-hidden="true">&times;</span>
+              </button>
           </div>
           <div class="modal-body">
             <main>
@@ -565,9 +565,9 @@
 
     <!-- begin mined block checking modal -->
     <div class="modal fade" id="minedBlockTrackerModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content" style="background-color:#000; border-top-left-radius: 0px; border-top-right-radius: 0px; border-style: outset; border-width: 5px; border-color:#000">
-          <div class="modal-header" style="background-color: #000; border-top-left-radius: 0px; border-top-right-radius: 0px; ">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background-color: #840032;">
+          <div class="modal-header">
             <h5 class="modal-title" id="staticModalLabel" style="font-weight:bold; color:#ffffff;">Waiting For Confirmation | ethoFS Block Tracker</h5>
             <br>
             <center><img src="dashboard/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo"></center>
@@ -606,9 +606,9 @@
 
     <!-- begin preparing upload modal -->
     <div class="modal fade" id="preparingUploadModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content" style="background-color:#080808; border-top-left-radius: 0px; border-top-right-radius: 0px; border-style: outset; border-width: 5px; border-color:#ffffff">
-          <div class="modal-header" style="background-image: linear-gradient(#000, #000); border-top-left-radius: 0px; border-top-right-radius: 0px; ">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background-color: #840032;">
+          <div class="modal-header">
             <h5 class="modal-title" id="staticModalLabel" style="font-weight:bold; color:#ffffff;">Preparing Data Upload | ethoFS Block Tracker</h5>
             <br>
             <center><img src="dashboard/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo"></center>
@@ -642,10 +642,11 @@
 
     <!-- begin contract detail modal -->
     <div class="modal fade" id="contractDetailModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content" style="background-color:#000; border-top-left-radius: 0px; border-top-right-radius: 0px; border-style: outset; border-width: 5px; border-color:#000">
-          <div class="modal-header" style="background-color: #000; border-top-left-radius: 0px; border-top-right-radius: 0px; ">
-            <h5 class="modal-title" id="staticModalLabel" style="font-weight:bold; color: white;">ethoFS Hosting Contract Details</h5>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background-color: #840032;">
+          <div class="modal-header">
+            <h4 class="modal-title" id="defaultModalLabel" style="color:white;">ethoFS Hosting Contract Details</h4>
+            <br>
             <center><img src="dashboard/images/ethofslogo.png" width="200" alt="Ether-1 ETHO Logo"></center>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;" onclick="resetContractDetailTableRows();">
               <span aria-hidden="true">&times;</span>
@@ -653,7 +654,7 @@
           </div>
           <div class="modal-body">
             <main>
-              <div class="box node" style="width:100%; background: #000000;">
+              <div class="box node" style="width:100%;">
                 <center>
                   <h3>ETHOFS HOSTING CONTRACT DETAILS</h3>
                 </center>
@@ -661,45 +662,43 @@
               </div>
               <div class="summary" style="background: #000000; background-color: #000">
                 <div id="earth"></div>
-                <table class="rwd-table" id="contract-detail-table" name="contract-detail-table">
-                  <tr style="border-color:#000;">
-                    <th>Contract Name</th>
-                  </tr>
-                  <tr style="border-color:#000;">
-                    <td data-th="Contract Name"><span id="contract-detail-name" name="contract-detail-name"></span></td>
-                  </tr>
-                  <tr style="border-color:#000;">
-                    <th>Contract Deployment Block Height</th>
-                  </tr>
-                  <tr style="border-color:#000;">
-                    <td data-th="Contract Deployment Block Height"><span id="contract-detail-startblock" name="contract-detail-startblock"></span></td>
-                  </tr>
-                  <tr style="border-color:#000;">
-                    <th>Contract Expiration Block Height</th>
-                  </tr>
-                  <tr style="border-color:#000;">
-                    <td data-th="Contract Expiration Block Height"><span id="contract-detail-endblock" name="contract-detail-endblock"></span></td>
-                  </tr>
-                  <tr style="border-color:#000;">
-                    <th>Contract Status</th>
-                  </tr>
-                  <tr style="border-color:#000;">
-                    <td data-th="Contract Status"><span id="contract-detail-status" name="contract-detail-status"></span></td>
-                  </tr>
-                  <tr style="border-color:#000;">
-                    <th>Total Contract Size</th>
-                  </tr>
-                  <tr style="border-color:#000;">
-                    <td data-th="Total Contract Size"><span id="contract-detail-size" name="contract-detail-size"></span></td>
-                  </tr>
-                  <tr>
-                    <th>Content Description</th>
-                    <th>Content Hash</th>
-                  </tr>
-                  <tr>
-                  </tr>
-
-                </table>
+                <div class="box node" style="width:100%; background: #000000;">
+                  <table class="rwd-table" id="contract-detail-table" name="contract-detail-table">
+                    <tr style="border-color:#000; word-break: break-word;">
+                      <th>Contract Name</th>
+                    </tr>
+                    <tr style="border-color:#000;">
+                      <td data-th="Contract Name"><span id="contract-detail-name" name="contract-detail-name"></span></td>
+                    </tr>
+                    <tr style="border-color:#000;">
+                      <th>Contract Deployment Block Height</th>
+                    </tr>
+                    <tr style="border-color:#000;">
+                      <td data-th="Contract Deployment Block Height"><span id="contract-detail-startblock" name="contract-detail-startblock"></span></td>
+                    </tr>
+                    <tr style="border-color:#000;">
+                      <th>Contract Expiration Block Height</th>
+                    </tr>
+                    <tr style="border-color:#000;">
+                      <td data-th="Contract Expiration Block Height"><span id="contract-detail-endblock" name="contract-detail-endblock"></span></td>
+                    </tr>
+                    <tr style="border-color:#000;">
+                      <th>Contract Status</th>
+                    </tr>
+                    <tr style="border-color:#000;">
+                      <td data-th="Contract Status"><span id="contract-detail-status" name="contract-detail-status"></span></td>
+                    </tr>
+                    <tr style="border-color:#000;">
+                      <th>Total Contract Size</th>
+                    </tr>
+                    <tr style="border-color:#000;">
+                      <td data-th="Total Contract Size"><span id="contract-detail-size" name="contract-detail-size"></span></td>
+                    </tr>
+                    <tr style="word-break: break-word">
+                      <th>Content Hash</th>
+                    </tr>
+                  </table>
+                </div>
 
 
                 <table class="rwd-table" id="contract-detail-extension-table" name="contract-detail-table">
@@ -737,19 +736,20 @@
                 </table>
 
 
-                <div class="table-data__tool-right">
+                <div class="table-data__tool-right" style="margin-left: 15px;">
                   <button class="btn btn-primary" id="contract-extension-button" type="button" onclick="contractExtensionConfirmation();">
                     </i>Extend Hosting Contract</button>
+                    <br>
+                    <br>
                 </div>
 
               </div>
           </div>
 
           </main>
-          </p>
-        </div>
-        <div class="modal-footer" style="background-color: #000; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#000">
-          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="resetContractDetailTableRows();">Close</button>
+          <div class="modal-footer" style="background-color: #840032; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#000">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="resetContractDetailTableRows();">Close</button>
+          </div>
         </div>
       </div>
     </div>

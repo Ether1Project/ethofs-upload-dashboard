@@ -551,10 +551,9 @@ function showHostingContractDetails(counter) {
         var table = document.getElementById("contract-detail-table");
         var row = table.insertRow(count + 10);
         var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        cell1.innerHTML = ethoFSHostingContractPath;
-        cell2.innerHTML = '<a href="http://data.ethofs.com/ipfs/' + ethoFSHostingContractHash + '">' + ethoFSHostingContractHash + '</a>';
-        row.setAttribute("style", "border-bottom-color: #151515;");
+        //var cell2 = row.insertCell(1);
+        //cell1.innerHTML = ethoFSHostingContractPath;
+        cell1.innerHTML = '<a href="http://data.ethofs.com/ipfs/' + ethoFSHostingContractHash + '" style="word-break: break-word">' + ethoFSHostingContractHash + '</a>';
     }
 
 }
