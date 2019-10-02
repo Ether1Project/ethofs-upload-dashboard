@@ -380,7 +380,7 @@
             </div>
             <div class="modal-body">
 
-              <div id="files" class="box disabled" ondragover="event.preventDefault()">
+              <div id="files" class="box" ondragover="event.preventDefault()">
                 <h4 align="center">Upload Your Files</h4>
 
                 <div id="drag-container">
@@ -431,69 +431,68 @@
               Live Upload | ethoFS Browser Node
             </h4>
           </div>
-          <div class="modal-body">
-
-            <table class="rwd-table">
-              <tr style="border-color:#000;">
-                <th>Contract Name</th>
-              </tr>
-              <tr style="border-color:#000;">
-                <td data-th="Contract Name"><input type="text" id="newcontractname" name="newcontractname" placeholder="Enter Contract Name" style="color:Black;"></input></td>
-              </tr>
-              <tr>
-                <th>ethoFS Upload Status</th>
-                <th>Upload Size</th>
-                <th>Contract Duration (Blocks)</th>
-              </tr>
-              <tr>
-                <td data-th="ethoFS Upload Hash"><span id="upload-hash"></span></td>
-                <td data-th="Upload Size"><span id="upload-size">0</span> MB</td>
-                <td data-th="Contract Duration (Blocks)">
-                  <center><select id="contract-duration" onchange="contractDurationChange(this);"></center>
-                  <option value="100000" selected="selected">100000<p> - 15 Days</p>
-                  </option>
-                  <option value="200000">200000<p> - 30 Days</p>
-                  </option>
-                  <option value="300000">300000<p> - 45 Days</p>
-                  </option>
-                  <option value="400000">400000<p> - 60 Days</p>
-                  </option>
-                  <option value="500000">500000<p> - 75 Days</p>
-                  </option>
-                  <option value="600000">600000<p> - 90 Days</p>
-                  </option>
-                  <option value="700000">700000<p> - 105 Days</p>
-                  </option>
-                  <option value="800000">800000<p> - 120 Days</p>
-                  </option>
-                  <option value="900000">900000<p> - 135 Days</p>
-                  </option>
-                  <option value="1000000">1000000<p> - 150 Days</p>
-                  </option>
-                  </select>
-                </td>
-              </tr>
-              <tr style="border-color:#000;">
-                <th>Total Contract Cost</th>
-              </tr>
-              <tr style="border-color:#0000;">
-                <center>
+          <div class="modal-body" style="width:100%; background: #000000;">
+            <main>
+              <table class="rwd-table" name="contract-detail-table">
+                <tr style="border-color:#000;">
+                  <th>Contract Name</th>
+                </tr>
+                <tr style="border-color:#000;">
+                  <td data-th="Contract Name"><input type="text" id="newcontractname" name="newcontractname" placeholder="Enter Contract Name" style="color:Black;"></input></td>
+                </tr>
+                <tr>
+                  <th>ethoFS Upload Status</th>
+                  <td data-th="ethoFS Upload Hash"><span id="upload-hash"></span></td>
+                </tr>
+                <tr>
+                  <th>Upload Size</th>
+                  <td data-th="Upload Size"><span id="upload-size">0</span> MB</td>
+                </tr>
+                <tr>
+                  <th>Contract Duration (Blocks)</th>
+                  <td data-th="Contract Duration (Blocks)">
+                    <select id="contract-duration" onchange="contractDurationChange(this);">
+                      <option value="100000" selected="selected">100000<p> - 15 Days</p>
+                      </option>
+                      <option value="200000">200000<p> - 30 Days</p>
+                      </option>
+                      <option value="300000">300000<p> - 45 Days</p>
+                      </option>
+                      <option value="400000">400000<p> - 60 Days</p>
+                      </option>
+                      <option value="500000">500000<p> - 75 Days</p>
+                      </option>
+                      <option value="600000">600000<p> - 90 Days</p>
+                      </option>
+                      <option value="700000">700000<p> - 105 Days</p>
+                      </option>
+                      <option value="800000">800000<p> - 120 Days</p>
+                      </option>
+                      <option value="900000">900000<p> - 135 Days</p>
+                      </option>
+                      <option value="1000000">1000000<p> - 150 Days</p>
+                      </option>
+                    </select>
+                  </td>
+                </tr>
+                <tr style="border-color:#0000;">
+                  <th>Total Contract Cost</th>
                   <td data-th="Total Contract Cost"><span id="contract-cost">0</span> ETHO</td>
-                </center>
-              </tr>
-            </table>
+                </tr>
+              </table>
 
           </div>
 
-        </div>
-        <div class="modal-footer" style="background-color: #840032;">
-          <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
-          <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" id="upload-confirm-button" onclick="window.startUploadProcess();">CONFIRM</button>
+          </main>
+          <div class="modal-footer" style="background-color: #840032; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-color:#000">
+            <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+            <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" id="upload-confirm-button" onclick="window.startUploadProcess();">CONFIRM</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="uploadTrackerModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal fade" id="uploadTrackerModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content" style="background-color: #840032;">
           <div class="modal-header">
@@ -658,8 +657,8 @@
                 <center>
                   <h3>ETHOFS HOSTING CONTRACT DETAILS</h3>
                 </center>
-
               </div>
+
               <div class="summary" style="background: #000000; background-color: #000">
                 <div id="earth"></div>
                 <div class="box node" style="width:100%; background: #000000;">
@@ -739,8 +738,8 @@
                 <div class="table-data__tool-right" style="margin-left: 15px;">
                   <button class="btn btn-primary" id="contract-extension-button" type="button" onclick="contractExtensionConfirmation();">
                     </i>Extend Hosting Contract</button>
-                    <br>
-                    <br>
+                  <br>
+                  <br>
                 </div>
 
               </div>

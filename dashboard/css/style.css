@@ -2,6 +2,7 @@
 .rwd-table {
   margin: 1em 0;
   min-width: 300px;
+  overflow: scroll;
 }
 .rwd-table tr {
   border-top: 1px solid #000;
