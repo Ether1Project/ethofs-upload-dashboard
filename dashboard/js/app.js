@@ -306,7 +306,7 @@ window.startUploadProcess = function() {
                     streamFinishCount++;
                     GlobalMainHashArray.push(`${data.hash}`);
                     GlobalMainPathArray.push(`${data.path}`);
-                    if (streamFinishCount == MainFileArray.length) {
+                    if (((!IsMobile) && (streamFinishCount >= MainFileArray.length)) || ((IsMobile) && (streamFinishCount >= MainFileArray[0].length))) {
                         createMainHash();
                     }
                 }

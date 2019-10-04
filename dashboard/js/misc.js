@@ -10,6 +10,7 @@ var privateKeyLogin = false;
 var GlobalPrivateKey;
 var minimumContractCost = 10000000000000000;
 
+var IsMobile = false;
 var GlobalUploadName = "";
 var GlobalUserAddress = "";
 var GlobalHostingCost = 1.0;
@@ -46,6 +47,16 @@ if (typeof web3 == 'undefined') {
     ethofsLogin("");
 }
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    IsMobile = true;
+    var uploadButton = document.getElementById("fileUploadButton");
+    uploadButton.webkitdirectory = false;
+    uploadButton.mozdirectory = false;
+    uploadButton.msdirectory = false;
+    uploadButton.odirectory = false;
+    uploadButton.directory = false;
+    console.log("Mobile Device Detected");
+}
 
 function ethofsLogin(privateKey) {
     $('#ethofsLoginModal').modal('hide');
