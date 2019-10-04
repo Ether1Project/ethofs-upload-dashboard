@@ -430,6 +430,15 @@ function checkForUploadedContentAvailability(HostingContractName) {
     return false;
 }
 /*************************************************************************************************************/
+//Get the Node count via the api
+$.getJSON('https://cors-anywhere.herokuapp.com/https://api.ether1.org/mnpapi.php?api=mnp_summary', function(data) {
+
+  var text = `${data.total_gn}`
+  console.log(text)
+
+  $(".totalgn").html(text);
+
+});
 /*************************************************************************************************************/
 function resetUploadSystem() {
     GlobalMainHashArray = new Array();
