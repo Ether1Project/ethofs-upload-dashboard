@@ -71,30 +71,22 @@ function start() {
 	    },
             config: {
 	            Bootstrap: [
-                        '/dns4/wss0.ethofs.com/tcp/443/wss/ipfs/QmTJ81wQ6cQV9bh5nTthfLbjnrZPMeeCPfvRFiygSzWV1W',
                         '/dns4/wss1.ethofs.com/tcp/443/wss/ipfs/QmTcwcKqKcnt84wCecShm1zdz1KagfVtqopg1xKLiwVJst',
                         '/dns4/wss.ethofs.com/tcp/443/wss/ipfs/QmPW8zExrEeno85Us3H1bk68rBo7N7WEhdpU9pC9wjQxgu',
                         '/dns4/wss2.ethofs.com/tcp/443/wss/ipfs/QmUEy4ScCYCgP6GRfVgrLDqXfLXnUUh4eKaS1fDgaCoGQJ',
-                        '/dns4/wss3.ethofs.com/tcp/443/wss/ipfs/QmPT4bDvbAjwPTjf2yeugRT1pruHoH2DMLhpjR2NoczWgw',
-                        '/dns4/wss4.ethofs.com/tcp/443/wss/ipfs/QmeG81bELkgLBZFYZc53ioxtvRS8iNVzPqxUBKSuah2rcQ',
                         '/dns4/wss5.ethofs.com/tcp/443/wss/ipfs/QmRwQ49Zknc2dQbywrhT8ArMDS9JdmnEyGGy4mZ1wDkgaX',
-                        '/dns4/wss6.ethofs.com/tcp/443/wss/ipfs/Qmf4oLLYAhkXv95ucVvUihnWPR66Knqzt9ee3CU6UoJKVu',
-                        '/dns4/wss0.ethofs.com/tcp/443/wss/ipfs/QmTJ81wQ6cQV9bh5nTthfLbjnrZPMeeCPfvRFiygSzWV1W',
-                        '/dns4/wss7.ethofs.com/tcp/443/wss/ipfs/QmeG81bELkgLBZFYZc53ioxtvRS8iNVzPqxUBKSuah2rcQ',
+                        '/dns4/wss6.ethofs.com/tcp/443/wss/ipfs/QmaGGSUqoFpv6wuqvNKNBsxDParVuGgV3n3iPs2eVWeSN4',
+                        '/dns4/wss7.ethofs.com/tcp/443/wss/ipfs/QmRYw68MzD4jPvner913mLWBdFfpPfNUx8SRFjiUCJNA4f',
                         '/dns4/wss8.ethofs.com/tcp/443/wss/ipfs/QmeG81bELkgLBZFYZc53ioxtvRS8iNVzPqxUBKSuah2rcQ'
                     ],
 		Addresses: {
                     Swarm: [
-                        '/dns4/wss0.ethofs.com/tcp/443/wss/ipfs/QmTJ81wQ6cQV9bh5nTthfLbjnrZPMeeCPfvRFiygSzWV1W',
                         '/dns4/wss1.ethofs.com/tcp/443/wss/ipfs/QmTcwcKqKcnt84wCecShm1zdz1KagfVtqopg1xKLiwVJst',
                         '/dns4/wss.ethofs.com/tcp/443/wss/ipfs/QmPW8zExrEeno85Us3H1bk68rBo7N7WEhdpU9pC9wjQxgu',
                         '/dns4/wss2.ethofs.com/tcp/443/wss/ipfs/QmUEy4ScCYCgP6GRfVgrLDqXfLXnUUh4eKaS1fDgaCoGQJ',
-                        '/dns4/wss3.ethofs.com/tcp/443/wss/ipfs/QmPT4bDvbAjwPTjf2yeugRT1pruHoH2DMLhpjR2NoczWgw',
-                        '/dns4/wss4.ethofs.com/tcp/443/wss/ipfs/QmeG81bELkgLBZFYZc53ioxtvRS8iNVzPqxUBKSuah2rcQ',
                         '/dns4/wss5.ethofs.com/tcp/443/wss/ipfs/QmRwQ49Zknc2dQbywrhT8ArMDS9JdmnEyGGy4mZ1wDkgaX',
-                        '/dns4/wss6.ethofs.com/tcp/443/wss/ipfs/Qmf4oLLYAhkXv95ucVvUihnWPR66Knqzt9ee3CU6UoJKVu',
-                        '/dns4/wss0.ethofs.com/tcp/443/wss/ipfs/QmTJ81wQ6cQV9bh5nTthfLbjnrZPMeeCPfvRFiygSzWV1W',
-                        '/dns4/wss7.ethofs.com/tcp/443/wss/ipfs/QmeG81bELkgLBZFYZc53ioxtvRS8iNVzPqxUBKSuah2rcQ',
+                        '/dns4/wss6.ethofs.com/tcp/443/wss/ipfs/QmaGGSUqoFpv6wuqvNKNBsxDParVuGgV3n3iPs2eVWeSN4',
+                        '/dns4/wss7.ethofs.com/tcp/443/wss/ipfs/QmRYw68MzD4jPvner913mLWBdFfpPfNUx8SRFjiUCJNA4f',
                         '/dns4/wss8.ethofs.com/tcp/443/wss/ipfs/QmeG81bELkgLBZFYZc53ioxtvRS8iNVzPqxUBKSuah2rcQ'
                      ]
                 }
@@ -320,7 +312,7 @@ window.startUploadProcess = function() {
 
     const streamFilesExternally = (filesArray, MainHashArray) => {
 
-        var confirmationServers = ["https://ipfsapi.ethofs.com/ipfs/", "https://ipfsapi1.ethofs.com/ipfs/", "https://ipfsapi2.ethofs.com/ipfs/", "https://ipfsapi5.ethofs.com/ipfs/", "https://ipfsapi6.ethofs.com/ipfs/", "https://ipfsapi7.ethofs.com/ipfs/"];
+        var confirmationServers = ["https://ipfsapi.ethofs.com/ipfs/", "https://ipfsapi1.ethofs.com/ipfs/", "https://ipfsapi2.ethofs.com/ipfs/", "https://ipfsapi5.ethofs.com/ipfs/", "https://ipfsapi6.ethofs.com/ipfs/", "https://ipfsapi7.ethofs.com/ipfs/", "https://ipfsapi8.ethofs.com/ipfs/"];
         let hashVerificationArray = [...GlobalHashArray, ...GlobalMainHashArray];
         hashVerificationArray.push(GlobalMainContentHash);
         var hashConfirmationCount = 0;
@@ -425,14 +417,11 @@ window.startUploadProcess = function() {
                 data: pinAdding.methods.AddNewContract(GlobalMainContentHash, HostingContractName, HostingContractDuration, pinSize, pinSize, contentHashString, contentPathString).encodeABI()
             };
             var privateKey = '0x' + GlobalPrivateKey;
-            console.log("Private Key: " + privateKey);
             web3.eth.accounts.signTransaction(tx, privateKey)
                 .then(function(signedTransactionData) {
-                    console.log("Signed TX Data: " + signedTransactionData.rawTransaction);
                     web3.eth.sendSignedTransaction(signedTransactionData.rawTransaction, function(error, result) {
                         if (!error) {
                             if (result) {
-                                console.log("Result: " + result);
                                 $('#minedBlockTrackerModal').modal('show');
                                 waitForReceipt(result, function(receipt) {
                                     console.log("Transaction Has Been Mined: " + receipt);
