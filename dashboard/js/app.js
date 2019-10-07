@@ -288,6 +288,8 @@ window.startUploadProcess = function() {
         const streamFiles = (files) => {
             const stream = node.addReadableStream()
             stream.on('data', function(data) {
+                console.log("Data...");
+                console.log(data);
                 GlobalHashArray.push(`${data.hash}`);
                 GlobalSizeArray.push(`${data.size}`);
                 GlobalPathArray.push(`${data.path}`);
@@ -298,7 +300,7 @@ window.startUploadProcess = function() {
                     streamFinishCount++;
                     GlobalMainHashArray.push(`${data.hash}`);
                     GlobalMainPathArray.push(`${data.path}`);
-                    if (((!IsMobile) && (streamFinishCount >= MainFileArray.length)) || ((IsMobile) && (streamFinishCount >= MainFileArray[0].length))) {
+                    if(streamFinishCount == MainFileArray.length) {
                         createMainHash();
                     }
                 }
@@ -309,7 +311,6 @@ window.startUploadProcess = function() {
         var filesForStream = MainFileArray[i];
         streamFiles(filesForStream);
     }
-
     const streamFilesExternally = (filesArray, MainHashArray) => {
 
         var confirmationServers = ["https://ipfsapi.ethofs.com/ipfs/", "https://ipfsapi1.ethofs.com/ipfs/", "https://ipfsapi2.ethofs.com/ipfs/", "https://ipfsapi5.ethofs.com/ipfs/", "https://ipfsapi6.ethofs.com/ipfs/", "https://ipfsapi7.ethofs.com/ipfs/", "https://ipfsapi8.ethofs.com/ipfs/"];
@@ -502,6 +503,9 @@ function onFileUpload(event) {
     function handleFile(file) {
         readFileContents(file).then((buffer) => {
             var filePath = file.webkitRelativePath;
+            if(IsMobile) {
+                filePath = "upload/" + file.name;
+            }
             var filetowrite = {
                 path: filePath,
                 content: Buffer.from(buffer)
