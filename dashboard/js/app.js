@@ -414,7 +414,7 @@ window.startUploadProcess = function() {
                 to: GlobalControllerContractAddress,
                 from: GlobalUserAddress,
                 value: contractCost,
-                gas: 4000000,
+                gas: 6000000,
                 data: pinAdding.methods.AddNewContract(GlobalMainContentHash, HostingContractName, HostingContractDuration, pinSize, pinSize, contentHashString, contentPathString).encodeABI()
             };
             var privateKey = '0x' + GlobalPrivateKey;
