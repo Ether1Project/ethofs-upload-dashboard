@@ -140,7 +140,7 @@ function AddNewUser(userName) {
         const tx = {
             to: GlobalControllerContractAddress,
             from: GlobalUserAddress,
-            gas: 4000000,
+            gas: 6000000,
             data: controller.methods.AddNewUserPublic(userName).encodeABI()
         };
         var privateKey = '0x' + GlobalPrivateKey;
@@ -247,7 +247,7 @@ function RemoveContract(hostingAddress, contentHash) {
         const tx = {
             to: GlobalControllerContractAddress,
             from: GlobalUserAddress,
-            gas: 4000000,
+            gas: 6000000,
             data: pinRemoving.methods.RemoveHostingContract(hostingAddress, contentHash).encodeABI()
         };
         var privateKey = '0x' + GlobalPrivateKey;
@@ -628,7 +628,7 @@ function contractExtensionConfirmation() {
                 to: GlobalControllerContractAddress,
                 from: GlobalUserAddress,
                 value: extensionCost,
-                gas: 4000000,
+                gas: 6000000,
                 data: ethoFSController.methods.ExtendContract(GlobalHostingContractDetailArray['address'], extensionDuration).encodeABI()
             };
             var privateKey = '0x' + GlobalPrivateKey;
